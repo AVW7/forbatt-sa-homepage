@@ -83,6 +83,9 @@ export function MainNav() {
                 { label: "View All Brands", href: "/brands" },
               ]}
             />
+            <a href="/about" className="font-semibold hover:text-fb-red transition-colors">
+              About
+            </a>
             <MegaMenu
               title="Resources"
               items={[
@@ -183,6 +186,9 @@ export function MainNav() {
                 </a>
                 <a href="/brands" className="block py-3 px-4 font-semibold hover:bg-fb-red/10 hover:text-fb-red transition-colors border-l-2 border-transparent hover:border-fb-red">
                   Brands
+                </a>
+                <a href="/about" className="block py-3 px-4 font-semibold hover:bg-fb-red/10 hover:text-fb-red transition-colors border-l-2 border-transparent hover:border-fb-red">
+                  About
                 </a>
                 <div className="border-t border-border my-2" />
                 <p className="text-xs font-mono font-bold text-muted-foreground uppercase tracking-wider px-4 py-2">→ Resources</p>
