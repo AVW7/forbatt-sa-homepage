@@ -130,8 +130,19 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    border-radius: 0 !important; /* Sharp edges - Command Center aesthetic */
   }
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Override any rounded corners for B2B sharp-edge aesthetic */
+button,
+input,
+textarea,
+select,
+.card,
+[class*="rounded"] {
+  border-radius: 0 !important;
 }
