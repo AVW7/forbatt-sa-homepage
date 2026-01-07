@@ -10,7 +10,7 @@ export function Footer() {
     <footer className="bg-card text-foreground border-t-4 border-fb-red">
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-12 mb-12">
           {/* Company Info - Spans 2 columns on large screens */}
           <div className="lg:col-span-2">
             {/* Logo */}
@@ -55,7 +55,41 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Product Categories */}
+          {/* Company */}
+          <div>
+            <h4 className="font-mono font-bold text-sm uppercase tracking-wider mb-6 text-fb-red border-b-2 border-fb-red/30 pb-2">
+              → Company
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <a href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="/brands" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Our Brands
+                </a>
+              </li>
+              <li>
+                <a href="/training" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Training Programs
+                </a>
+              </li>
+              <li>
+                <a href="/media" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  News & Media
+                </a>
+              </li>
+              <li>
+                <a href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Solutions */}
           <div>
             <h4 className="font-mono font-bold text-sm uppercase tracking-wider mb-6 text-fb-red border-b-2 border-fb-red/30 pb-2">
               → Solutions
@@ -80,24 +114,34 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/solutions" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  All Solutions
+                <a href="/automation" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Automation
                 </a>
               </li>
               <li>
-                <a href="/brands" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Brands
+                <a href="/solutions" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  All Solutions
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Resources */}
+          {/* Support & Resources */}
           <div>
             <h4 className="font-mono font-bold text-sm uppercase tracking-wider mb-6 text-fb-red border-b-2 border-fb-red/30 pb-2">
-              → Resources
+              → Support
             </h4>
             <ul className="space-y-3">
+              <li>
+                <a href="/support" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Technical Support
+                </a>
+              </li>
+              <li>
+                <a href="/downloads" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Downloads
+                </a>
+              </li>
               {siteData.footer.quickLinks.map((link) => (
                 <li key={link.href}>
                   <a href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -105,11 +149,6 @@ export function Footer() {
                   </a>
                 </li>
               ))}
-              <li>
-                <a href="/support" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Technical Support
-                </a>
-              </li>
             </ul>
           </div>
 

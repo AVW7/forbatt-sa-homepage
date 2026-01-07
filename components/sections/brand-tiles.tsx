@@ -34,7 +34,7 @@ export function BrandTiles() {
   };
 
   return (
-    <section className="py-20 bg-fb-charcoal">
+    <section className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <motion.div
@@ -44,10 +44,10 @@ export function BrandTiles() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             {siteData.home.brandStrip.headline}
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Industry-leading technology partners powering mission-critical operations
           </p>
         </motion.div>
@@ -66,7 +66,7 @@ export function BrandTiles() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ y: -8, scale: 1.02 }}
-                className="group relative bg-black/60 border border-gray-800 rounded-none overflow-hidden cursor-pointer"
+                className="group relative bg-card border border-border rounded-none overflow-hidden cursor-pointer"
               >
                 {/* Main Content */}
                 <div className="p-8 transition-all duration-300">
@@ -80,19 +80,19 @@ export function BrandTiles() {
                   </div>
 
                   {/* Brand Name */}
-                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-(--color-${brand.accentColor}) transition-colors duration-300">
+                  <h3 className={`text-2xl font-bold text-foreground mb-3 group-hover:text-(--color-${brand.accentColor}) transition-colors duration-300`}>
                     {brand.name}
                   </h3>
 
                   {/* Brand Description */}
-                  <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-6">
                     {brandInfo?.copy || "Industry-leading solutions"}
                   </p>
 
                   {/* Hover Overlay with Technical Specs */}
-                  <div className="absolute inset-0 bg-black/95 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-8">
+                  <div className="absolute inset-0 bg-background/95 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-8">
                     <div className="text-center">
-                      <h4 className="text-lg font-bold text-white mb-4 uppercase tracking-wider">
+                      <h4 className="text-lg font-bold text-foreground mb-4 uppercase tracking-wider">
                         Technical Specifications
                       </h4>
                       <ul className="space-y-2">

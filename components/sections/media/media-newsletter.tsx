@@ -48,37 +48,37 @@ export function MediaNewsletter() {
             <form className="space-y-4">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-mono text-gray-400 uppercase tracking-wider mb-2">
+                  <label className="block text-xs font-mono text-muted-foreground uppercase tracking-wider mb-2">
                     Full Name *
                   </label>
                   <Input
                     type="text"
                     placeholder="John Doe"
-                    className="h-11 bg-muted/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-fb-red focus:ring-fb-red rounded-none"
+                    className="h-11 bg-muted/50 border-border text-foreground placeholder:text-muted-foreground focus:border-fb-red focus:ring-fb-red rounded-none"
                     required
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-mono text-gray-400 uppercase tracking-wider mb-2">
+                  <label className="block text-xs font-mono text-muted-foreground uppercase tracking-wider mb-2">
                     Email Address *
                   </label>
                   <Input
                     type="email"
                     placeholder="john.doe@company.com"
-                    className="h-11 bg-muted/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-fb-red focus:ring-fb-red rounded-none"
+                    className="h-11 bg-muted/50 border-border text-foreground placeholder:text-muted-foreground focus:border-fb-red focus:ring-fb-red rounded-none"
                     required
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-xs font-mono text-gray-400 uppercase tracking-wider mb-2">
+                <label className="block text-xs font-mono text-muted-foreground uppercase tracking-wider mb-2">
                   Company (Optional)
                 </label>
                 <Input
                   type="text"
                   placeholder="Your Company Name"
-                  className="h-11 bg-muted/50 border-gray-700 text-white placeholder:text-gray-500 focus:border-fb-red focus:ring-fb-red rounded-none"
+                  className="h-11 bg-muted/50 border-border text-foreground placeholder:text-muted-foreground focus:border-fb-red focus:ring-fb-red rounded-none"
                 />
               </div>
 
@@ -89,7 +89,7 @@ export function MediaNewsletter() {
                   className="mt-1 rounded-none"
                   required
                 />
-                <label htmlFor="consent" className="text-xs text-gray-400">
+                <label htmlFor="consent" className="text-xs text-muted-foreground">
                   I consent to receive marketing communications from Forbatt SA. You can unsubscribe at any time.
                   View our <a href="/privacy" className="text-fb-red hover:underline">Privacy Policy</a>.
                 </label>
@@ -107,11 +107,11 @@ export function MediaNewsletter() {
             </form>
 
             {/* Trust Indicators */}
-            <div className="flex items-center justify-center gap-6 mt-6 pt-6 border-t border-gray-800 text-xs text-gray-600">
+            <div className="flex items-center justify-center gap-6 mt-6 pt-6 border-t border-border text-xs text-muted-foreground">
               <span>✓ No spam</span>
-              <span className="text-gray-800">|</span>
+              <span className="text-border">|</span>
               <span>✓ Unsubscribe anytime</span>
-              <span className="text-gray-800">|</span>
+              <span className="text-border">|</span>
               <span>✓ POPIA compliant</span>
             </div>
           </motion.div>

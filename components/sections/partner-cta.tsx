@@ -58,7 +58,7 @@ export function PartnerCTA() {
             </div>
 
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 uppercase tracking-tight">
-              Scale Your Business with <span className="text-black">Forbatt SA</span>
+              Scale Your Business with <span className="text-foreground">Forbatt SA</span>
             </h2>
             
             <p className="text-xl mb-8 opacity-95 leading-relaxed max-w-3xl mx-auto">
@@ -94,11 +94,11 @@ export function PartnerCTA() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ y: -4 }}
-                className="group bg-white/10 backdrop-blur-sm border-2 border-white/20 hover:border-white/40 rounded-none p-6 transition-all duration-300"
+                className="group bg-background/10 backdrop-blur-sm border-2 border-foreground/20 hover:border-foreground/40 rounded-none p-6 transition-all duration-300"
               >
                 <div className="flex items-start gap-4">
                   {/* Icon */}
-                  <div className="w-12 h-12 bg-white/10 border-2 border-white/30 group-hover:border-white rounded-none flex items-center justify-center flex-shrink-0 transition-colors">
+                  <div className="w-12 h-12 bg-background/10 border-2 border-foreground/30 group-hover:border-foreground rounded-none flex items-center justify-center flex-shrink-0 transition-colors">
                     <benefit.icon className="h-6 w-6" />
                   </div>
 

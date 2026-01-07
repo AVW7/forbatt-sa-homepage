@@ -37,7 +37,7 @@ export function ResourceHub() {
   ];
 
   return (
-    <section className="py-24 bg-muted/30 border-y-4 border-gray-800">
+    <section className="py-24 bg-muted/30 border-y-4 border-border">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <motion.div
@@ -64,11 +64,11 @@ export function ResourceHub() {
           </p>
 
           {/* Stats */}
-          <div className="flex items-center justify-center gap-8 mt-8 text-sm font-mono text-gray-600">
+          <div className="flex items-center justify-center gap-8 mt-8 text-sm font-mono text-muted-foreground">
             <span>UPTIME: <span className="text-fb-green">99.9%</span></span>
-            <span className="text-gray-800">|</span>
+            <span className="text-border">|</span>
             <span>RESPONSE: <span className="text-fb-green">&lt;1HR</span></span>
-            <span className="text-gray-800">|</span>
+            <span className="text-border">|</span>
             <span>SUPPORT: <span className="text-fb-green">24/7</span></span>
           </div>
         </motion.div>

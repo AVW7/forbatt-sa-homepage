@@ -55,13 +55,13 @@ export function MediaFilter() {
 
           {/* Search */}
           <div className="relative w-full lg:w-96">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-500" />
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <Input
               type="text"
-              placeholder="Search by keyword, SKU, or date..."
+              placeholder="Search articles, products, or announcements..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="pl-10 h-10 bg-muted/50 border-gray-700 text-foreground placeholder:text-gray-500 focus:border-fb-red focus:ring-fb-red rounded-none font-mono text-sm"
+              className="pl-10 h-10 bg-muted/50 border-border text-foreground placeholder:text-muted-foreground focus:border-fb-red focus:ring-fb-red rounded-none font-mono text-sm"
             />
           </div>
         </div>

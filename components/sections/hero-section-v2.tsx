@@ -55,7 +55,7 @@ export function HeroSectionV2() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed"
+              className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed"
             >
               {subheadline}
             </motion.p>
@@ -69,13 +69,13 @@ export function HeroSectionV2() {
             >
               <form onSubmit={handleSearch} className="flex gap-2">
                 <div className="relative flex-1">
-                  <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+                  <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
                   <Input
                     type="text"
                     placeholder="Search by SKU or Product Name..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="pl-10 h-12 bg-black/60 border-gray-700 text-white placeholder:text-gray-400 focus:border-fb-red focus:ring-fb-red rounded-none font-mono text-sm"
+                    className="pl-10 h-12 bg-black/60 border-border text-white placeholder:text-muted-foreground focus:border-fb-red focus:ring-fb-red rounded-none font-mono text-sm"
                   />
                 </div>
                 <Button
@@ -103,7 +103,7 @@ export function HeroSectionV2() {
                   className={
                     cta.variant === "primary"
                       ? "bg-fb-red hover:bg-fb-red/90 text-white rounded-none border-none"
-                      : "bg-transparent hover:bg-white/10 text-white border-white rounded-none"
+                      : "bg-transparent hover:bg-card/10 text-foreground border-foreground rounded-none"
                   }
                 >
                   <a href={cta.href}>{cta.label}</a>
